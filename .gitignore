@@ -1,0 +1,5 @@
+*.agekey
+keys.txt
+kubeconfig*
+talosconfig*
+.DS_Store
