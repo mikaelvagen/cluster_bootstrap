@@ -43,6 +43,8 @@ spec:
     persistence:
       enabled: true
       size: 10Gi
+    strategy:
+      type: Recreate
     postgresql-ha:
       enabled: false
     postgresql:
