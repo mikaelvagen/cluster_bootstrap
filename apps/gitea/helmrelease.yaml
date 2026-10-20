@@ -23,13 +23,23 @@ spec:
         email: admin@varlamore.com
       config:
         server:
-          ROOT_URL: http://localhost:3000
+          DOMAIN: gitea.homelab.gielinor
+          ROOT_URL: http://gitea.homelab.gielinor/
+          SSH_DOMAIN: gitea-ssh.homelab.gielinor
         session:
           PROVIDER: db
         cache:
           ADAPTER: memory
         queue:
           TYPE: level
+    service:
+      http:
+        clusterIP: ""
+      ssh:
+        type: LoadBalancer
+        clusterIP: ""
+        annotations:
+          lbipam.cilium.io/ips: "10.10.0.6"
     persistence:
       enabled: true
       size: 10Gi
@@ -41,3 +51,4 @@ spec:
       enabled: false
     valkey:
       enabled: false
+    
