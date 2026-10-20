@@ -1,0 +1,8 @@
+apiVersion: cilium.io/v2
+kind: CiliumLoadBalancerIPPool
+metadata:
+  name: services
+spec:
+  blocks:
+    - start: 10.10.0.5
+      stop: 10.10.0.105
