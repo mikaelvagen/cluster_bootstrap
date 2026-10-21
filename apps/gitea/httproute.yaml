@@ -9,7 +9,7 @@ spec:
       namespace: gateway
       sectionName: http
   hostnames:
-    - gitea.homelab.gielinor
+    - gitea.varlamore.gielinor
   rules:
     - backendRefs:
         - name: gitea-http

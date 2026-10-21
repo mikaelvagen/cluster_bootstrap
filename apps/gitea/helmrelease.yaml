@@ -23,9 +23,9 @@ spec:
         email: admin@varlamore.com
       config:
         server:
-          DOMAIN: gitea.homelab.gielinor
-          ROOT_URL: http://gitea.homelab.gielinor/
-          SSH_DOMAIN: gitea-ssh.homelab.gielinor
+          DOMAIN: gitea.varlamore.gielinor
+          ROOT_URL: http://gitea.varlamore.gielinor/
+          SSH_DOMAIN: gitea-ssh.varlamore.gielinor
         session:
           PROVIDER: db
         cache:
