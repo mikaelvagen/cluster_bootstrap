@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Secret
+metadata:
+    name: gitea-varlamore-apps
+    namespace: flux-system
+stringData:
+    identity: ENC[AES256_GCM,data:yiZ/toeI276pJB2NTKD63xXcuqsq9BmigOPbPRDzLFzyatXENsauIEu6cBVqdO2j91BNKPe0Rz9nndkWc6TO5Br9PEklUOq9ygFJqTOQx/YYnmO56Jpx4lu0zqkUcyUsdMtehxGuanjZ4vy9fn+LR9AFUWVZMTA=,iv:WpYwFQy/pUDvcbdrdUZFbdHKi2A0FRl5JkQswtWs078=,tag:r9uAKaE9gzgknVRM+OFKgA==,type:str]
+    identity.pub: ENC[AES256_GCM,data:8UTWfZWe0D+zvV+1IbCRLdwKT16jm9HMEMDwTQMw74Rjj7GrF9vzSCY460QlyRzLOdIxZJQRjMUaNI6N6QjIENNyIcgdkdilDkgP+sIZVcH8,iv:ugKY0F3aUjs4bv5t+D4amQp8HFnrup7uXTKyR3X8U/U=,tag:EyxVcJPaTcjNeN2Mbbx5Vg==,type:str]
+    known_hosts: ENC[AES256_GCM,data:AtEWm2Oeiim1bnisCf+yBgfdYJ2AQOB4fSPvL3DleLN1o97f7x3nlHpx7rH6ozvS7I2arVVpvHGo4hmNj3oHsox+1yeuOxIvLKhYMw0NTWpZG/3WBAIjXd5K1T323LG06hIlhFcCxftk9eRaQ75Bg4hiG7DUSyWW7dhQwOVaOPhQxmgS2HGUmIWwFr+FlpxEQRuKJJIAl2vknyeraOBmI6h+/9NqgecCufd86vBN0T67AawDkko4tFB2m9kt4bFm9Fo=,iv:RtHhGxkvNdA1IkFvLJofq+vs9AnOcuOIL7yVM+MLE+I=,tag:9GucmFBn3f9HZJmH89H00g==,type:str]
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBBcTVqOFBpdHY3c2xwUEk0
+            R3hsL25VVk12bEw0OGFoQW5FaXBydk03ZkNZCjdqQjR6VCt1Qk4yK2c3Wk9vNXo3
+            NFZWck5TazRlMlJnTUNWQTA1T1E1UWMKLS0tIHFPUUwrL1UxNWlEQ3FMVVB0RGRB
+            Zm9Jakw4WW9ya0dJZy9DNVVNTmdmWjAK8EusXlr6nQzHfnYo8dACN4giUDF829SI
+            Iwn8Vss0DrPgxI+iukw9OvTA+g2KR2DM2HlqHaJ5QtLclqB4AGnuWw==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age13mzs6juk99qnku076m2eecvmtrvxujgqsac4jwak46le2uphlsks66gfsa
+    encrypted_regex: ^(data|stringData)$
+    lastmodified: "2026-10-23T21:35:09Z"
+    mac: ENC[AES256_GCM,data:e0Xa2PbrI8vlx7VEC4poXXNvNPm/dGGexTo+cx5pMcOsMPiQUcfGwsj5hOCG7OlzYkc84Gmi8v+n0Q1zfOdPaULsgXPQXLah70aVE7Xbj5O2ERE6d0Z2Ws7M6f50bPiTckOEoyWK6kM1BnTCrfC3tPuNbp7qFf3EQB74NvC0X4k=,iv:5yutWR55NI6ye1vKJumC4wIlPVYhfS+7LiQeA+xUcX0=,tag:CRTdzO0Csi4Hu4ZqIh9Cbg==,type:str]
+    version: 3.13.3
